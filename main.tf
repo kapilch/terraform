@@ -1,9 +1,14 @@
-variable "test" {
-  type    = string
-  default = "kapilchawla"
+provider "aws" {
+    region = "us-east-2"
+    access_key = var.access_key
+    secret_key = var.secret_key
 }
 
-output "test" {
-  value = var.test
+resource "aws_vpc" "myFirstVPC" {
+    cidr_block = "10.0.0.0/16"
+
+    tags = {
+        "Name" = "myVPC"
+    }
 }
 
