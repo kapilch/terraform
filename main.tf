@@ -12,6 +12,7 @@ resource "aws_vpc" "myFirstVPC" {
 
     tags = {
         "Name" = "myVPC"
+        "env" = "prod"
     }
 }
 
