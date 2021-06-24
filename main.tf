@@ -14,3 +14,4 @@ resource "aws_vpc" "myFirstVPC" {
         "Name" = "myVPC"
     }
 }
+
