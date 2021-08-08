@@ -15,4 +15,3 @@ resource "aws_vpc" "myFirstVPC" {
         "env" = "prod"
     }
 }
-
