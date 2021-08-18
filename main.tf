@@ -16,3 +16,4 @@ resource "aws_vpc" "myFirstVPC" {
     }
 }
 
+
